@@ -1,9 +1,12 @@
-const { merge } = require('webpack-merge');
-const path = require('path');
+import { merge } from 'webpack-merge';
+import path from 'path';
+import {fileURLToPath} from 'url';
 
-const config = require('./webpack.config');
+import config from './webpack.config.js';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-module.exports=merge( config, {
+export default merge( config, {
 	mode: 'development',
 	devtool: 'inline-source-map',
 	devServer: {
