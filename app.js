@@ -9,6 +9,7 @@ import errorHandler from 'errorhandler'
 import * as prismic from '@prismicio/client'
 import {client} from './config/prismicConfig.js';
 import * as prismicH from '@prismicio/helpers';
+import { url } from 'inspector';
 
 // configuration
 const __filename = fileURLToPath(import.meta.url);
@@ -42,13 +43,22 @@ app.get('/about', async (req, res) => {
 
 app.get('/collections', async (req, res) => {
   const meta = await client.getSingle('metad')
-
-  res.render('pages/collections', {meta});
+  const { results: collection } = await client.get({
+    predicates: prismic.predicate.at('document.type', 'collection'),
+    fetchLinks: 'product.image'
+  })
+  console.log(collection)
+  collection.forEach((el) => {
+    console.log(el.data.product[0].product_products)
+  })
+  res.render('pages/collections', {meta, collection});
 });
 
 app.get('/details/:uid', async (req, res) => {
   const meta = await client.getSingle('metad')
-  const product = await client.getByUID('product', req.params.uid)
+  const product = await client.getByUID('product', req.params.uid, {
+    fetchLinks: 'collection.title'
+  })
 
   res.render('pages/details', {meta, product});
 });
