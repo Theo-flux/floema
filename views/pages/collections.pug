@@ -6,16 +6,16 @@ block variable
 block content
   .collections
     .collections__wrapper
-      .collection__header
+      .collections__header
         each collection, index in collections
           .collections__header__label=`${home.data.collection} ${Increment(index)}`
-          .collection__header__title=collection.data.title
+          .collections__header__title=collection.data.title
 
       .collections__gallery
         .collections__gallery__wrapper
           each collection in collections
             each product in collection.data.product
-              a.collections__gallery__link
+              a.collections__gallery__link(href=Link(product.product_products))
                 figure.collections__gallery__media
                   img.collections__gallery__media__image(src=product.product_products.data.image.url alt=product.product_products.data.image.alt)
 
