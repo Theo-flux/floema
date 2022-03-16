@@ -1,0 +1,25 @@
+.preloader{
+  @extend %cover;
+  // display: flex;
+  display: none;
+  color: $color-white;
+  background-color: $color-contessa;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.preloader_text{
+  @extend %title-53;
+  max-width: 66.625rem;
+  font-weight: regular;
+}
+
+.preloader_number{
+  @extend %description-14;
+  bottom: 4.5625rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
