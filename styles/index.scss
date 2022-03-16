@@ -1,0 +1,37 @@
+// utils styles
+@import './utils/functions.scss';
+@import './utils/mixins.scss';
+@import './utils/variables.scss';
+@import './utils/vendors.scss';
+@import './utils/responsive.scss';
+
+// base styles
+@import './base/reset.scss';
+@import './base/fonts.scss';
+@import './base/base.scss';
+
+// home styles
+@import './pages/home/home.scss';
+
+// about styles
+@import './pages/about/about.scss';
+@import './pages/about/content.scss';
+@import './pages/about/gallery.scss';
+@import './pages/about/highlight.scss';
+
+// details styles
+@import './pages/details/details.scss';
+
+// collections styles
+@import './pages/collections/collections.scss';
+
+// shared styles
+@import './shared/descriptions.scss';
+@import './shared/titles.scss';
+
+// layout styles
+@import './layout/navigation.scss';
+
+// components styles
+@import './components/preloader.scss';
+

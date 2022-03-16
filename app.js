@@ -20,7 +20,6 @@ app.set('view engine', 'pug');
 
 // linkresolver
 const handleLinkresolver = (doc) => {
-  console.log(doc)
 
   if(doc.type === 'product'){
     return `/details/${doc.slug}`
@@ -38,6 +37,7 @@ const handleLinkresolver = (doc) => {
 
 // app middlewares
 app.use(errorHandler())
+app.use(express.static(path.join(__dirname, 'public')))
 app.use((req, res, next) => {
   res.locals.ctx = {
     prismicH,
