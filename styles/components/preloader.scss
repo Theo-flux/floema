@@ -1,7 +1,7 @@
 .preloader{
   @extend %cover;
-  // display: flex;
-  display: none;
+  display: flex;
+  // display: none;
   color: $color-white;
   background-color: $color-contessa;
   align-items: center;

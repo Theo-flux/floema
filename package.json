@@ -6,7 +6,8 @@
     "frontend:dev": "webpack server --progress --config webpack.config.development.js",
     "frontend:build": "webpack --progress --config webpack.config.build.js",
     "backend:build": "node app.js",
-    "backend:dev": "nodemon app.js"
+    "backend:dev": "nodemon app.js",
+    "clean": "node clean.js"
   },
   "author": "Ekunnusi Theophilus",
   "license": "ISC",

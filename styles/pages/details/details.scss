@@ -1,11 +1,9 @@
 .details{
-  @extend %cover;
+
 }
 
 .details__wrapper{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
 }
 
 .details__media{
@@ -28,7 +26,12 @@
 
 }
 
+
 .details__information__content{
+
+}
+
+.details__inofrmation__highlights {
 
 }
 
