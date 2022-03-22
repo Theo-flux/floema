@@ -12,8 +12,8 @@
 
 .details__media{
   height: 78.2rem;
-  position: relative;
   width: 55.4rem;
+  position: relative;
 }
 
 .details__media__image{
@@ -59,7 +59,7 @@
 .details__information__highlight__icon{
   height: 4rem;
   width: 4rem;
-  border: 1px solid inherit;
+  border: 1px solid $color-white;
   border-radius: 50%;
   margin-right: 3.75rem;
 }
