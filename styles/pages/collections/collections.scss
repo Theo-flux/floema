@@ -6,6 +6,7 @@
 
 .collections__wrapper{
   @extend %cover;
+  overflow: hidden;
 }
 
 .collections__header{
@@ -20,6 +21,7 @@
 .collections__header__label{
   @extend %description-12;
   line-height: 1.5;
+  letter-spacing: 0.1;
   text-transform: uppercase;
   transform:  rotate(90deg);
   text-align: center;
@@ -27,6 +29,7 @@
 
 .collections__header__title{
   @extend %title-200;
+  padding-top: 2rem;
 }
 
 .collections__gallery{
