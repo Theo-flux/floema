@@ -33,23 +33,31 @@
 }
 
 .collections__gallery{
-
+  @extend %cover;
+  display: flex;
+  align-items: center;
 }
 
 .collections__gallery__wrapper{
-
+  display: flex;
+  align-items: center;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
 }
 
 .collections__gallery__link{
-
 }
 
 .collections__gallery__media{
-
+  height: 60rem;
+  width: 44.7rem;
+  position: relative;
 }
 
 .collections__gallery__media__image{
-
+  @extend %cover;
+  object-fit: cover;
 }
 
 .collections__content{
