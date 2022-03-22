@@ -1,5 +1,7 @@
 .collections{
   @extend %cover;
+  background-color: $color-quicksand;
+  color: $color-quarter-spanish-white;
 }
 
 .collections__wrapper{
@@ -9,17 +11,22 @@
 .collections__header{
   left: 50%;
   display: flex;
+  align-items: center;
   position: absolute;
   transform: translate(-50%,-50%) rotate(-90deg);
   top: 50%;
 }
 
 .collections__header__label{
-
+  @extend %description-12;
+  line-height: 1.5;
+  text-transform: uppercase;
+  transform:  rotate(90deg);
+  text-align: center;
 }
 
 .collections__header__title{
-
+  @extend %title-200;
 }
 
 .collections__gallery{

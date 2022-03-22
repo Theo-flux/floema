@@ -8,7 +8,7 @@ block content
     .collections__wrapper
       .collections__header
         each collection, index in collections
-          .collections__header__label=`${home.data.collection} ${Increment(index)}`
+          .collections__header__label!=`${home.data.collection} <br> ${Increment(index)}`
           .collections__header__title=collection.data.title
 
       .collections__gallery
