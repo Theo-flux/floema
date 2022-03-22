@@ -10,7 +10,7 @@ block content
         img.details__media__image(src=product.data.image.url alt=product.data.image.alt)
 
       .details__information
-        p.details__information__collection=product.data.collection.data.title
+        p.details__information__collection=`${product.data.collection.data.title} collection`
 
         h1.details__information__title=product.data.title
 
@@ -20,8 +20,7 @@ block content
               p.details__information__highlight
                 svg.details__information__highlight__icon
                   use(href=`sprite-${highlight.icon}`)
-
-                span.details__information__highlight__text!=highlight.text.replace(/\n/, '<br>')
+                small.details__information__highlight__text!=highlight.text.replace(/\n/, '<br>')
 
           .details__information__list
             each info in product.data.info
