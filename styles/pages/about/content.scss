@@ -1,21 +1,25 @@
 .about__content{
   @extend %space;
+  margin-left: auto;
+  margin-right: auto;
+  width: 125.8rem;
 }
 
 .about__content__wrapper{
+  display: flex;
 
 }
 
 .about__content__label{
-
+  width: 18rem;
 }
 
 .about__content__description{
-
+ width: 36.2rem;
 }
 
 .about__content__media{
-
+  position: absolute;
 }
 
 .about__content__media__image{

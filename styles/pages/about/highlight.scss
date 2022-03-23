@@ -7,17 +7,31 @@
 }
 
 .about__highlight__label{
-
+  @extend %description-12;
+  text-transform: uppercase;
 }
 
 .about__highlight__title{
-
+  transform: rotate(90deg);
 }
 
 .about__highlight__media{
+  position: absolute;
+  height: 76rem;
+  width: 54rem;
 
+  &:first-child {
+    left: 0;
+    top: 0;
+  }
+
+  &:last-child {
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .about__highlight__media__image{
-
+  @extend %cover;
+  object-fit: cover;
 }
