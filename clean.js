@@ -1,3 +1,4 @@
+// importing the required node modules to access file system
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url';
@@ -11,7 +12,7 @@ function clean(){
   fs.readdir(directoryPath, function (err, files) {
     //handling error
     if (err) {
-        return console.log('Unable to scan directory: ' + err);
+        return console.log('Error accessing directory: ' + err);
     }
     //listing all files using forEach
     files.forEach(function (file) {

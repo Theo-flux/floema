@@ -51,8 +51,8 @@
 }
 
 .collections__gallery__media{
-  height: 60rem;
-  width: 44.7rem;
+  height: 50.48rem;
+  width: 35.76rem;
   position: relative;
 }
 
@@ -62,17 +62,25 @@
 }
 
 .collections__content{
-
+  @extend %cover;
 }
 
 .collections__article{
+  position: absolute;
+  left: 8rem;
+  bottom: 2rem;
+  opacity: 0;
 
+  &--active {
+    opacity: 1;
+  }
 }
 
 .collections__article__title{
-
+  @extend %title-60;
 }
 
 .collections__article__description{
-
+  @extend %description-16;
+  max-width: 44rem;
 }
