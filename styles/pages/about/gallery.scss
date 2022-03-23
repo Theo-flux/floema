@@ -1,6 +1,6 @@
 .about__gallery{
   height: 58.6rem;
-  position: relative;
+  @extend %space;
 }
 
 .about__gallery__wrapper{
