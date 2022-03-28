@@ -1,6 +1,31 @@
 
 .home {
+  @extend %cover;
+  @extend %center;
 
+  color: $color-quarter-spanish-white;
+  background-color: $color-contessa;
+  text-align: center;
+
+  &:before,
+  &:after {
+    content: '';
+    height: 24rem;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &:before {
+    background: linear-gradient(to bottom, $color-contessa 0%, rgba($color-contessa, 0) 100%);
+    top: 0;
+  }
+
+  &:after {
+    background: linear-gradient(to top, $color-contessa 0%, rgba($color-contessa, 0) 100%);
+    bottom: 0;
+  }
 }
 
 .home__wrapper {
@@ -20,11 +45,11 @@
 }
 
 .home__gallery {
-
+  @extend %cover;
 }
 
 .home__gallery__media {
-
+  position: absolute;
 }
 
 .home__gallery__media__image {
@@ -32,5 +57,16 @@
 }
 
 .home__link {
-
+  @extend %description-14;
+  width: 28.8rem;
+  height: 6rem;
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  z-index: 2;
 }
