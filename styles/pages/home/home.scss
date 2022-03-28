@@ -8,15 +8,15 @@
 }
 
 .home__header {
-
+  @extend %vertical__header;
 }
 
 .home__header__label {
-
+  @extend %vertical__header__label;
 }
 
 .home__header__title {
-
+  @extend %vertical__header__title;
 }
 
 .home__gallery {
