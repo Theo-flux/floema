@@ -17,7 +17,7 @@ block content
           h1.about__title!=section.primary.text.replace(/\n/g, '<br>')
 
         if section.slice_type === 'content'
-          section.about__content
+          section.about__content(class = `${section.primary.type === 'left' ? '.about__content--left' : '.about__content--right' }`)
             .about__content__wrapper
               p.about__content__label=section.primary.label
               .about__content__description!=ctx.prismicH.asHTML(section.primary.description)
