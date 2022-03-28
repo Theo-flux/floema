@@ -2,13 +2,21 @@
   @extend %space;
   margin-left: auto;
   margin-right: auto;
-  width: 125.8rem;
-  // display: none;
+  display: flex;
+  justify-content: center;
 }
 
 .about__content__wrapper{
   display: flex;
 
+  .about__content--right & {
+    flex-direction: row-reverse;
+  }
+
+}
+
+.about__content__box {
+  display: flex;
 }
 
 .about__content__label{
@@ -20,7 +28,7 @@
 }
 
 .about__content__media{
-  position: absolute;
+
 }
 
 .about__content__media__image{
