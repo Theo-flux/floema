@@ -1,32 +1,7 @@
-extend ../base
+extends ../base.pug
 
-block variable
-  - var template = 'details'
-
-block content
-  .details
-    .details__wrapper
-      figure.details__media
-        img.details__media__image(src=product.data.image.url alt=product.data.image.alt)
-
-      .details__information
-        p.details__information__collection=`${product.data.collection.data.title} collection`
-
-        h1.details__information__title=product.data.title
-
-        .details__information__content
-          .details__inofrmation__highlights
-            each highlight in product.data.highlight
-              p.details__information__highlight
-                svg.details__information__highlight__icon
-                  use(href=`sprite-${highlight.icon}`)
-                small.details__information__highlight__text!=highlight.text.replace(/\n/, '<br>')
-
-          .details__information__list
-            each info in product.data.info
-              p.details__information__item
-                strong.details__information__item__title=info.information_title
-                span.details__information__item__description=info.information_description
-
-          each element in product.data.shop
-            a.details__information__link(href=element.shop_url.url target='_blank')=element.text
+block variables 
+    - var template = 'Details'
+    
+block content 
+    .detail_title Details Page

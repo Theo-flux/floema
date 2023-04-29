@@ -20,6 +20,7 @@ const dirImages = path.join(__dirname, 'images');
 const dirShared = path.join(__dirname, 'shared');
 const dirStyles = path.join(__dirname, 'styles');
 const dirVideos = path.join(__dirname, 'videos');
+const dirViews = path.join(__dirname, 'views');
 const dirNode = 'node_modules';
 
 console.log(dirApp, dirShared, dirStyles);
@@ -36,6 +37,7 @@ export default {
 			dirShared,
 			dirStyles,
 			dirVideos,
+			dirViews,
 			dirNode
 		]
 	},

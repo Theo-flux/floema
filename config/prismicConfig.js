@@ -4,7 +4,7 @@ import * as prismic from '@prismicio/client';
 import fetch from 'node-fetch';
 
 const accessToken = process.env.PRISMIC_ACCESS_TOKEN;
-const endPoint = prismic.getEndpoint(process.env.PRISMIC_REPO);
+const endPoint = prismic.getRepositoryEndpoint(process.env.PRISMIC_REPO);
 
 // const routes = [
 //   {
