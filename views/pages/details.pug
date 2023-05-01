@@ -4,4 +4,27 @@ block variables
   - var template = 'Details';
 
 block content
-  .detail_title Details Page
+  .detail
+    .detail__wrapper 
+      figure.detail__media
+        img.detail__media__image(alt=product.data.image.alt, src=product.data.image.url)
+
+      .detail__information 
+        p.detail__information__collection=product.data.collection.data.title
+        h1.detail__information__collection=product.data.title
+
+        .detail__information__content 
+          .detail__information__highlights
+          each highlight in product.data.highlight 
+            p.detail__information__highlight 
+              svg.detail__information__highlight__icon 
+                use(xlink:href=`sprite-${highlight.icon}`)
+              span.detail__information__highlight__description=highlight.text
+
+          .detail__information__list 
+            each item in product.data.info
+              p.detail__information__item
+                strong.detail__information__item__title=item.information_title 
+                span.detail__information__item__description=item.information_description 
+
+          a.detail__information__link(target="_blank", href=product.data.shop[0].shop_url.url)=product.data.shop[0].text
