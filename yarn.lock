@@ -994,6 +994,13 @@
     "@nodelib/fs.scandir" "2.1.5"
     "fastq" "^1.6.0"
 
+"@prettier/plugin-pug@^2.4.2":
+  "integrity" "sha512-NYno1b0ZIY/2/wIiPSIWVRbWdhJ7KPkwjOo/xzWOZYUA35ZrwaEQshoEoLEizUrnizBuIgW93E9kqIrJEjBang=="
+  "resolved" "https://registry.npmjs.org/@prettier/plugin-pug/-/plugin-pug-2.4.2.tgz"
+  "version" "2.4.2"
+  dependencies:
+    "pug-lexer" "^5.0.0"
+
 "@prismicio/client@^6.3.0":
   "integrity" "sha512-FeKbmuXNCNU1tw+yvc87PfYF8wSY0rfe0Ou2VCo0PFdMlHzRMu8CXkITNswv3cDakeu8xU0Z7IOfTiF4WE5nLQ=="
   "resolved" "https://registry.npmjs.org/@prismicio/client/-/client-6.3.0.tgz"
@@ -5676,6 +5683,11 @@
   "resolved" "https://registry.npmjs.org/prepend-http/-/prepend-http-2.0.0.tgz"
   "version" "2.0.0"
 
+"prettier@^2.3.0", "prettier@^2.8.8":
+  "integrity" "sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q=="
+  "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.8.8.tgz"
+  "version" "2.8.8"
+
 "process-nextick-args@~2.0.0":
   "integrity" "sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag=="
   "resolved" "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz"
@@ -5755,7 +5767,7 @@
     "pug-walk" "^2.0.0"
     "resolve" "^1.15.1"
 
-"pug-lexer@^5.0.1":
+"pug-lexer@^5.0.0", "pug-lexer@^5.0.1":
   "integrity" "sha512-0I6C62+keXlZPZkOJeVam9aBLVP2EnbeDw3An+k0/QlqdwH6rv8284nko14Na7c0TtqtogfWXcRoFE4O4Ff20w=="
   "resolved" "https://registry.npmjs.org/pug-lexer/-/pug-lexer-5.0.1.tgz"
   "version" "5.0.1"

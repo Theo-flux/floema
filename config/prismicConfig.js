@@ -1,5 +1,5 @@
-import dotenv from 'dotenv'
-dotenv.config()
+import dotenv from 'dotenv';
+dotenv.config();
 import * as prismic from '@prismicio/client';
 import fetch from 'node-fetch';
 
@@ -28,9 +28,7 @@ const endPoint = prismic.getRepositoryEndpoint(process.env.PRISMIC_REPO);
 //   },
 // ];
 
-
 export const client = prismic.createClient(endPoint, {
   accessToken,
   fetch,
 });
-
