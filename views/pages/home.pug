@@ -4,4 +4,17 @@ block variables
   - var template = 'Home';
 
 block content
-  .home_title Home Page
+  .home 
+  .home__wrapper 
+    .home__titles 
+        each collection, index in collections 
+          .home__titles__label=`${home.data.collection} ${Numbers(index)}`
+          .home__titles__title=collection.data.title
+
+    .home__gallery
+      each media in home.data.gallery 
+        figure.home__gallery__media 
+          img.home__gallery__media__image(alt=media.image.alt, src=media.image.url)
+    each list in navigation.data.list
+      if (list.title === 'Collections')
+        a(href=Link(list.link))=home.data.button
