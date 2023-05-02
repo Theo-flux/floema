@@ -17,4 +17,4 @@ block content
           img.home__gallery__media__image(alt=media.image.alt, src=media.image.url)
     each list in navigation.data.list
       if (list.title === 'Collections')
-        a(href=Link(list.link))=home.data.button
+        a.home__link(href=Link(list.link))=home.data.button

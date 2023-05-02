@@ -1,0 +1,19 @@
+@import './base/reset';
+
+// utils
+@import './utils/index';
+
+// base
+@import './base/index';
+
+// components
+@import './components/index';
+
+// layout
+@import './layout/index';
+
+// Pages
+@import './pages/about/index';
+@import './pages/collections/collections';
+@import './pages/details/details';
+@import './pages/home/home';
