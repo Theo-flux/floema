@@ -1,53 +1,38 @@
 @font-face {
   font-family: $font-george-x;
-  src: url('../../fonts/georgex-regular.eot');
-  src: url('../../fonts/georgex-regular.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/georgex-regular.woff2') format('woff2'),
-    url('../../fonts/georgex-regular.woff') format('woff'),
-    url('../../fonts/georgex-regular.ttf') format('truetype'),
-    url('../../fonts/georgex-regular.svg#georgex-regular') format('svg');
+  src: url('../fonts/');
+  src: url('../fonts/?#iefix') format('embedded-opentype'),
+    url('../fonts/george-regular.woff2') format('woff2'),
+    url('../fonts/george-regular.woff') format('woff'),
+    url('../fonts/george-regular.ttf') format('truetype'),
+    url('../fonts/george-regular.svg#george-regular') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-// @font-face {
-//   font-family: $font-suisse-bp;
-//   src: url('../../fonts/suisseintl-light.eot');
-//   src: url('../../fonts/suisseintl-light.eot?#iefix') format('embedded-opentype'),
-//     url('../../fonts/suisseintl-light.woff2') format('woff2'),
-//     url('../../fonts/suisseintl-light.woff') format('woff'),
-//     url('../../fonts/suisseintl-light.ttf') format('truetype'),
-//     url('../../fonts/suisseintl-light.svg#suisseintl-light') format('svg');
-//   font-weight: 300;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
 @font-face {
-  font-family: $font-suisse-bp;
-  src: url('../../fonts/suisseintl-ultraLight.eot');
-  src: url('../../fonts/suisseintl-ultraLight.eot?#iefix')
-      format('embedded-opentype'),
-    url('../../fonts/suisseintl-ultraLight.woff2') format('woff2'),
-    url('../../fonts/suisseintl-ultraLight.woff') format('woff'),
-    url('../../fonts/suisseintl-ultraLight.ttf') format('truetype'),
-    url('../../fonts/suisseintl-ultraLight.svg#suisseintl-ultraLight') format('svg');
-  font-weight: 100;
+  font-family: $font-univers;
+  src: url('../fonts/univers.eot');
+  src: url('../fonts/univers.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/univers.woff2') format('woff2'),
+    url('../fonts/univers.woff') format('woff'),
+    url('../fonts/univers.ttf') format('truetype'),
+    url('../fonts/univers.svg#univers') format('svg');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: $font-suisse-bp;
-  src: url('../../fonts/suisseintl-regular.eot');
-  src: url('../../fonts/suisseintl-regular.eot?#iefix')
-      format('embedded-opentype'),
-    url('../../fonts/suisseintl-regular.woff2') format('woff2'),
-    url('../../fonts/suisseintl-regular.woff') format('woff'),
-    url('../../fonts/suisseintl-regular.ttf') format('truetype'),
-    url('../../fonts/suisseintl-regular.svg#suisseintl-regular') format('svg');
-  font-weight: normal;
+  font-family: $font-univers;
+  src: url('../fonts/univers-light.eot');
+  src: url('../fonts/univers-light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/univers-light.woff2') format('woff2'),
+    url('../fonts/univers-light.woff') format('woff'),
+    url('../fonts/univers-light.ttf') format('truetype'),
+    url('../fonts/univers-light.svg#univers-light') format('svg');
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
