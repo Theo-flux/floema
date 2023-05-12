@@ -1,19 +1,32 @@
 @import './base/reset';
 
-// utils
-@import './utils/index';
+@import './utils/variables';
+@import './utils/functions';
+@import './utils/mixins';
+@import './utils/vendors';
+@import './utils/responsive';
 
-// base
-@import './base/index';
+@import './shared/descriptions';
+@import './shared/links';
+@import './shared/pages';
+@import './shared/titles';
+@import './shared/vertical-titles';
 
-// components
-@import './components/index';
+@import './base/fonts';
+@import './base/base';
 
-// layout
-@import './layout/index';
+@import './components/preloader';
+@import './components/transition';
 
-// Pages
-@import './pages/about/index';
+@import './layout/navigation';
+
+@import './pages/about/about';
+@import './pages/about/content';
+@import './pages/about/gallery';
+@import './pages/about/highlight';
+
 @import './pages/collections/collections';
+
 @import './pages/details/details';
+
 @import './pages/home/home';
